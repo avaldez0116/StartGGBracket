@@ -1,7 +1,18 @@
-echo "# StartGGBracket" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/avaldez0116/StartGGBracket.git
-git push -u origin main
+*:not(.bracket, .bracket *) {
+  visibility: collapse !important;
+  background: transparent !important;
+}
+
+.bracket,
+.bracket * {
+  visibility: visible !important;
+}
+
+.bracket {
+  position: fixed;
+  inset: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
